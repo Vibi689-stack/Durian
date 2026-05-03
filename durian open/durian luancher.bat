@@ -30,8 +30,8 @@ if "%version%"=="2" (
 
 if "%version%"=="3" (
     cls
-    echo 1.как купить durian c# ?
-    echo Ответ: сейчас это невозможно
+::    echo 1.как купить durian c# ?
+::    echo Ответ: сейчас это невозможно
     echo 2.можно ли пользоваться Durian++ на linux ?
     echo Ответ: ну ты же запустил этот батник
     echo 3.как скачать lua для Durian classic lua editon ?
