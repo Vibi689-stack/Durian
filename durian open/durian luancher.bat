@@ -10,7 +10,7 @@ echo версии Durian os
 echo 1.Durian classic lua editon
 echo 2.Durian++ editon for windows
 ::echo 3.Durian c# editon, Отсутсвует!!
-echo 3.Частые вопросы
+echo 3.Справка
 set /p version="выбирете версю >> "
 
 if "%version%"=="1" (
