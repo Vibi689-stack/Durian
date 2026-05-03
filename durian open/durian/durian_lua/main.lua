@@ -1,5 +1,5 @@
 Test_mode = false
-Version = " A 0.1.2.1"
+Version = "R 1.0"
 function Clear() -- очистка
   os.execute("cls 2>nul")
   os.execute("clear 2>/dev/null")
