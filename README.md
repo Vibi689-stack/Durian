@@ -2,7 +2,7 @@
 Первый мой проект на c++,batch,lua.
 Скачайте исходный код в Releases запустити durian luancher.bat
 
-!!!ВНИМАНИЕ!!! для работы Durian classic lua editon нужен lua
+!!!ВНИМАНИЕ!!! для работы Durian classic lua editon нужен lua (ссылка для винды https://github.com/rjpcomputing/luaforwindows)
 
 Что есть в проекте
 
