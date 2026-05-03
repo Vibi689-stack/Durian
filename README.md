@@ -3,7 +3,13 @@
 
 Durian - это псевдо ос
 
-Скачайте исходный код в Releases и запустити durian luancher.bat
+1)скачаете исходный код
+
+2)распакуйте
+
+3)переместите диск дуриана на диск C:
+
+4)перетащите durian luancher.bat на рабочий стол и запустите
 
 !!!ВНИМАНИЕ!!! для работы Durian classic lua editon нужен lua (ссылка для винды https://github.com/rjpcomputing/luaforwindows)
 
