@@ -1,5 +1,8 @@
 # Durian
 Первый мой проект на c++,batch,lua.
+
+Durian - это псевдо ос
+
 Скачайте исходный код в Releases запустити durian luancher.bat
 
 !!!ВНИМАНИЕ!!! для работы Durian classic lua editon нужен lua (ссылка для винды https://github.com/rjpcomputing/luaforwindows)
