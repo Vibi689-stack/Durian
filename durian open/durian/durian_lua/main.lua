@@ -1,11 +1,11 @@
 Test_mode = false
 Version = " A 0.1.2.1"
-function Clear() -- ÆÁ®·‚™†
+function Clear() -- –æ—á–∏—Å—Ç–∫–∞
   os.execute("cls 2>nul")
   os.execute("clear 2>/dev/null")
 end
 
-function Delay(sec) -- éÜàÑÄçàÖ
+function Delay(sec) -- –û–ñ–ò–î–ê–ù–ò–ï
   os.execute("timeout /t " .. sec .. " /nobreak >nul 2>nul")
   os.execute("sleep " .. sec .. " 2>/dev/null")
 end
@@ -20,133 +20,133 @@ function Input(type) -- input
   end
 end
 
-function Exit() -- ¢ÎÂÆ§
-  print("¢ÎÂÆ§®¨ ®ß ·®·‚•¨Î...")
+function Exit() -- –≤—ã—Ö–æ–¥
+  print("–≤—ã—Ö–æ–¥–∏–º –∏–∑ —Å–∏—Å—Ç–µ–º—ã...")
   Delay(2)
-  print("§Æ ·¢®§†≠®Ô!")
-  os.exit(0,"¢Î ¢ÎË´® ®ß ·®·‚•¨Î")
+  print("–¥–æ —Å–≤–∏–¥–∞–Ω–∏—è!")
+  os.exit(0,"–≤—ã –≤—ã—à–ª–∏ –∏–∑ —Å–∏—Å—Ç–µ–º—ã")
 end
 Commands ={
 ["add"] = {
   execute = function ()
-    print("Ø•‡¢Æ• Á®·´Æ:")
+    print("–ø–µ—Ä–≤–æ–µ —á–∏—Å–ª–æ:")
     local a = Input("n")
-    print("¢‚Æ‡Æ• Á®·´Æ:")
+    print("–≤—Ç–æ—Ä–æ–µ —á–∏—Å–ª–æ:")
     local b = Input("n")
-    print("®‚Æ£ ·´Æ¶•≠®Ô:",a + b)
+    print("–∏—Ç–æ–≥ —Å–ª–æ–∂–µ–Ω–∏—è:",a + b)
   end
   },
 ["multiply"] = {
     execute = function ()
-    print("Ø•‡¢Æ• Á®·´Æ:")
+    print("–ø–µ—Ä–≤–æ–µ —á–∏—Å–ª–æ:")
     local a = Input("n")
-    print("¢‚Æ‡Æ• Á®·´Æ:")
+    print("–≤—Ç–æ—Ä–æ–µ —á–∏—Å–ª–æ:")
     local b = Input("n")
-    print("®‚Æ£ „¨≠Æ¶•≠®Ô:",a * b)
+    print("–∏—Ç–æ–≥ —É–º–Ω–æ–∂–µ–Ω–∏—è:",a * b)
     end
   },
 ["subtraction"] = {
   execute = function ()
-  print("Ø•‡¢Æ• Á®·´Æ:")
+  print("–ø–µ—Ä–≤–æ–µ —á–∏—Å–ª–æ:")
   local a = Input("n")
-  print("¢‚Æ‡Æ• Á®·´Æ:")
+  print("–≤—Ç–æ—Ä–æ–µ —á–∏—Å–ª–æ:")
   local b = Input("n")
-  print("®‚Æ£ ¢ÎÁ•‚†≠®Ô:",a - b)
+  print("–∏—Ç–æ–≥ –≤—ã—á–µ—Ç–∞–Ω–∏—è:",a - b)
   end
 },
 ["division"] = {
     execute = function ()
-    print("Ø•‡¢Æ• Á®·´Æ:")
+    print("–ø–µ—Ä–≤–æ–µ —á–∏—Å–ª–æ:")
     local a = Input("n")
-    print("¢‚Æ‡Æ• Á®·´Æ:")
+    print("–≤—Ç–æ—Ä–æ–µ —á–∏—Å–ª–æ:")
     local b = Input("n")
-    print("®‚Æ£ §•´•≠®Ô:",a / b)
+    print("–∏—Ç–æ–≥ –¥–µ–ª–µ–Ω–∏—è:",a / b)
     end
 },
 ["vibi is not vim"] = {
   execute = function ()
     Clear()
-    print("Ì‚Æ Ø‡†¢§†.")
+    print("—ç—Ç–æ –ø—Ä–∞–≤–¥–∞.")
     Delay(2)
-    print("‚Î")
+    print("—Ç—ã")
     Delay(1)
-    print("ß≠†•Ë")
+    print("–∑–Ω–∞–µ—à")
     Delay(1)
-    print("®·ÂÆ§≠Î© ™Æ§?")
+    print("–∏—Å—Ö–æ–¥–Ω—ã–π –∫–æ–¥?")
     Delay(2)
-    print("¢•‡≠Æ?")
+    print("–≤–µ—Ä–Ω–æ?")
     Delay(1)
-    print("¨Æ¶•‚ ‚•°• ·™†ß†´®,·†¨ ≠†Ø®·´ Á‚Æ-‚Æ ·´„Á†©≠Æ•?")
+    print("–º–æ–∂–µ—Ç —Ç–µ–±–µ —Å–∫–∞–∑–∞–ª–∏,—Å–∞–º –Ω–∞–ø–∏—Å–ª —á—Ç–æ-—Ç–æ —Å–ª—É—á–∞–π–Ω–æ–µ?")
     Delay(3)
-    print("´†§≠Æ...ØÆ™†,„§†Á®")
+    print("–ª–∞–¥–Ω–æ...–ø–æ–∫–∞,—É–¥–∞—á–∏")
     Delay(3)
     Clear()
-    error("çÄâÑÖçÄ èéëïÄãäÄ!",666)
+    error("–ù–ê–ô–î–ï–ù–ê –ü–û–°–•–ê–õ–ö–ê!",666)
   end
 },
 ["help"] = {
   execute =function ()
   print("")
-  print("·´Æ¶•≠®• -- add")
-  print("¢ÎÁ•‚†≠®• -- subtraction")
-  print("„¨≠Æ¶•≠®• -- multiply")
-  print("§•´•≠®• -- division")
-  print("ÆÁ®·‚™† -- clear")
-  print("¢‡•¨Ô -- time")
-  print("§†‚† -- date")
-  print("¢ÎÂÆ§ ¢ bios -- bios")
-  print("¢ÎÂÆ§ -- exit")
+  print("—Å–ª–æ–∂–µ–Ω–∏–µ -- add")
+  print("–≤—ã—á–µ—Ç–∞–Ω–∏–µ -- subtraction")
+  print("—É–º–Ω–æ–∂–µ–Ω–∏–µ -- multiply")
+  print("–¥–µ–ª–µ–Ω–∏–µ -- division")
+  print("–æ—á–∏—Å—Ç–∫–∞ -- clear")
+  print("–≤—Ä–µ–º—è -- time")
+  print("–¥–∞—Ç–∞ -- date")
+  print("–≤—ã—Ö–æ–¥ –≤ bios -- bios")
+  print("–≤—ã—Ö–æ–¥ -- exit")
   if Test_mode == true then
-    print("®ß¨•≠®‚Ï ‰†©´(íÖëíéÇÄü îìçäñàü!) -- edit")
+    print("–∏–∑–º–µ–Ω–∏—Ç—å —Ñ–∞–π–ª(–¢–ï–°–¢–û–í–ê–Ø –§–£–ù–ö–¶–ò–Ø!) -- edit")
   end
   end
 },
 ["clear"] = {
   execute = function ()
-  print("ÆÁ®·‚™†...")
+  print("–æ—á–∏—Å—Ç–∫–∞...")
   Delay(1)
   Clear()
   end
 },
 ["time"] = {
   execute = function ()
-  local time = os.date("%H Á %M ¨®≠ %S ·•™")
-  print("·•©Á†·",time)
+  local time = os.date("%H —á %M –º–∏–Ω %S —Å–µ–∫")
+  print("—Å–µ–π—á–∞—Å",time)
   end
 },
 ["edit"] = {
   execute = function ()
   if Test_mode == true then
-    print("Ø‡Æ§Æ´¶•≠®• ·´•§„•‚ -->")
+    print("–ø—Ä–æ–¥–æ–ª–∂–µ–Ω–∏–µ —Å–ª–µ–¥—É–µ—Ç -->")
   end
   end
 
 },
 ["date"] = {
   execute = function ()
-    local Date = os.date("%Y £Æ§ %m ¨•·ÔÊ %d §•≠Ï")
+    local Date = os.date("%Y –≥–æ–¥ %m –º–µ—Å—è—Ü %d –¥–µ–Ω—å")
     print(Date)
   end
 },
 ["bios"] = {
   execute = function ()
     Test_mode = false
-    print("¢Æß‡†Ë†•¨ ¢ ¨•·‚≠Î© bios...")
+    print("–≤–æ–∑—Ä–∞—à–∞–µ–º –≤ –º–µ—Å—Ç–Ω—ã–π bios...")
     Delay(3)
     First_start()
   end
 }
 }
 
-function First_start() -- ‚®Ø† bios
+function First_start() -- —Ç–∏–ø–∞ bios
   Clear()
-  print("¢•‡·®Ô".. Version)
-  print("1) c‚†‡‚", "2) ≠†·‚‡Æ©™® ß†Ø„·™†", "3) ¢ÎÂÆ§")
-  print("¢¢•§®‚• ‚Æ´™Æ Ê®‰‡„ ¢†Ë•£Æ ¢Î°Æ‡†:")
+  print("–≤–µ—Ä—Å–∏—è".. Version)
+  print("1) c—Ç–∞—Ä—Ç", "2) –Ω–∞—Å—Ç—Ä–æ–π–∫–∏ –∑–∞–ø—É—Å–∫–∞", "3) –≤—ã—Ö–æ–¥")
+  print("–≤–≤–µ–¥–∏—Ç–µ —Ç–æ–ª–∫–æ —Ü–∏—Ñ—Ä—É –≤–∞—à–µ–≥–æ –≤—ã–±–æ—Ä–∞:")
   local start_func = io.read("*n")
   io.read()
   if start_func == 1 then
-    print("ß†Ø„·™...")
+    print("–∑–∞–ø—É—Å–∫...")
     Delay(3)
     Clear()
     Operation_sistem()
@@ -156,37 +156,37 @@ function First_start() -- ‚®Ø† bios
     Start_settings()
   end
 end
-function Start_settings() -- ≠†·‚‡Æ©™®
+function Start_settings() -- –Ω–∞—Å—Ç—Ä–æ–π–∫–∏
   Clear()
-  print("0)Æ‚¨•≠† 1) ¢™´ÓÁ®‚Ï ‚•·‚Æ¢Î• ‰„≠™Ê®®   2)¢ ‡†ß‡†°Æ‚™•....")
+  print("0)–æ—Ç–º–µ–Ω–∞ 1) –≤–∫–ª—é—á–∏—Ç—å —Ç–µ—Å—Ç–æ–≤—ã–µ —Ñ—É–Ω–∫—Ü–∏–∏   2)–≤ —Ä–∞–∑—Ä–∞–±–æ—Ç–∫–µ....")
   local setrings_func = Input("n")
   if setrings_func == 0 then
     First_start()
   elseif  setrings_func == 1 then
-    print("ß†Ø„·™ ‚•·‚Æ¢Æ© ¢•‡·®® ...")
+    print("–∑–∞–ø—É—Å–∫ —Ç–µ—Å—Ç–æ–≤–æ–π –≤–µ—Ä—Å–∏–∏ ...")
     Delay(3)
     Clear()
     Test_mode = true
     Operation_sistem()
   end
 end
-function Operation_sistem() -- cÆ°·‚¢•≠≠Æ ·†¨† Æ·
+function Operation_sistem() -- c–æ–±—Å—Ç–≤–µ–Ω–Ω–æ —Å–∞–º–∞ –æ—Å
   if UserName == nil then
-    print("¢¢•§®‚• ¢†Ë• ®¨Ô ØÆ´ÏßÆ¢†‚•´Ô ...")
+    print("–≤–≤–µ–¥–∏—Ç–µ –≤–∞—à–µ –∏–º—è –ø–æ–ª—å–∑–æ–≤–∞—Ç–µ–ª—è ...")
     UserName = Input("l")
   end
-  print("á§‡†¢·‚¢„©‚• ",UserName)
+  print("–ó–¥—Ä–∞–≤—Å—Ç–≤—É–π—Ç–µ ",UserName)
   Delay(1)
   Clear()
   while true do
-    print(UserName,"¢¢•§®‚• ™Æ¨†≠§„(help §´Ô ØÆ¨ÆÈ®):")
+    print(UserName,"–≤–≤–µ–¥–∏—Ç–µ –∫–æ–º–∞–Ω–¥—É(help –¥–ª—è –ø–æ–º–æ—â–∏):")
     User_command = Input("l")
     User_command = User_command:lower()
     if Commands[User_command] then
       Commands[User_command].execute()
     elseif User_command == "exit" then
       Exit()
-      print("™†™?")
+      print("–∫–∞–∫?")
     end
   end
 end
